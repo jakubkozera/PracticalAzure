@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32104.313
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageAccount", "StorageAccount\StorageAccount.csproj", "{3777F047-0977-46A0-9C8F-5BA4041C8586}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StorageAccount", "StorageAccount", "{128C1D57-F782-4B00-A30E-EAF26DE58A36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QueueStorage", "QueueStorage", "{C4A44CB1-07CD-4F5D-8779-DEF5BEBC2168}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlobStorage", "BlobStorage", "{0E5EE40F-5364-424D-BE4C-924C47BCD6D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlobStorageSample", "StorageAccount\BlobStorage\BlobStorageSample.csproj", "{51C2ED3E-C04D-4864-B77A-ABE652A45ADA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueMessagePublisher", "StorageAccount\QueueStorage\QueueMessagePublisher\QueueMessagePublisher.csproj", "{529B220E-BA5A-41FF-BEB7-A8BE7B8C06CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueMessageConsumer", "StorageAccount\QueueStorage\QueueMessageConsumer\QueueMessageConsumer.csproj", "{E1852DD4-4177-4258-9308-D83572117F62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TableStorage", "TableStorage", "{AD434636-F667-47B6-8FF5-93A9F0EB2E08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +23,29 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3777F047-0977-46A0-9C8F-5BA4041C8586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3777F047-0977-46A0-9C8F-5BA4041C8586}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3777F047-0977-46A0-9C8F-5BA4041C8586}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3777F047-0977-46A0-9C8F-5BA4041C8586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C2ED3E-C04D-4864-B77A-ABE652A45ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C2ED3E-C04D-4864-B77A-ABE652A45ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C2ED3E-C04D-4864-B77A-ABE652A45ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C2ED3E-C04D-4864-B77A-ABE652A45ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{529B220E-BA5A-41FF-BEB7-A8BE7B8C06CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529B220E-BA5A-41FF-BEB7-A8BE7B8C06CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529B220E-BA5A-41FF-BEB7-A8BE7B8C06CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529B220E-BA5A-41FF-BEB7-A8BE7B8C06CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1852DD4-4177-4258-9308-D83572117F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1852DD4-4177-4258-9308-D83572117F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1852DD4-4177-4258-9308-D83572117F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1852DD4-4177-4258-9308-D83572117F62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4A44CB1-07CD-4F5D-8779-DEF5BEBC2168} = {128C1D57-F782-4B00-A30E-EAF26DE58A36}
+		{0E5EE40F-5364-424D-BE4C-924C47BCD6D7} = {128C1D57-F782-4B00-A30E-EAF26DE58A36}
+		{51C2ED3E-C04D-4864-B77A-ABE652A45ADA} = {0E5EE40F-5364-424D-BE4C-924C47BCD6D7}
+		{529B220E-BA5A-41FF-BEB7-A8BE7B8C06CB} = {C4A44CB1-07CD-4F5D-8779-DEF5BEBC2168}
+		{E1852DD4-4177-4258-9308-D83572117F62} = {C4A44CB1-07CD-4F5D-8779-DEF5BEBC2168}
+		{AD434636-F667-47B6-8FF5-93A9F0EB2E08} = {128C1D57-F782-4B00-A30E-EAF26DE58A36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E44FA88-6951-4E3A-BDC3-C791D8B8A154}
