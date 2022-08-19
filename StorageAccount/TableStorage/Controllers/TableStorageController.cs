@@ -17,7 +17,7 @@ namespace TableStorageSample.Controllers
 
         public TableStorageController()
         {
-            var connectionString = "DefaultEndpointsProtocol=https;AccountName=projectname1sane;AccountKey=Z7BDYxJqQgFKvJPpw7NcKPpURQkOraIPpO74njujqaWgVKBrs/qP4eHgp9r4taV1l/xQk00I4pFa+AStyjfaMw==;EndpointSuffix=core.windows.net";
+            var connectionString = "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;QueueEndpoint=http://127.0.0.1:10001/devstoreaccount1;TableEndpoint=http://127.0.0.1:10002/devstoreaccount1;";
             TableServiceClient tableServiceClient = new TableServiceClient(connectionString);
 
             _tableClient = tableServiceClient.GetTableClient("employees");

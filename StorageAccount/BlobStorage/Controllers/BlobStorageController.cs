@@ -16,7 +16,7 @@ namespace StorageAccount.Controllers
         [HttpPost("upload")]
         public async Task<IActionResult> Upload(IFormFile file)
         {
-            var connectionString = "DefaultEndpointsProtocol=https;AccountName=projectname1sane;AccountKey=Z7BDYxJqQgFKvJPpw7NcKPpURQkOraIPpO74njujqaWgVKBrs/qP4eHgp9r4taV1l/xQk00I4pFa+AStyjfaMw==;EndpointSuffix=core.windows.net";
+            var connectionString = "UseDevelopmentStorage=true";
             BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
 
             var containerName = "documents";
@@ -38,7 +38,7 @@ namespace StorageAccount.Controllers
         [HttpGet("download")]
         public async Task<IActionResult> Download([FromQuery] string blobName)
         {
-            var connectionString = "DefaultEndpointsProtocol=https;AccountName=projectname1sane;AccountKey=Z7BDYxJqQgFKvJPpw7NcKPpURQkOraIPpO74njujqaWgVKBrs/qP4eHgp9r4taV1l/xQk00I4pFa+AStyjfaMw==;EndpointSuffix=core.windows.net";
+            var connectionString = "UseDevelopmentStorage=true";
             BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
 
             var containerName = "documents";
