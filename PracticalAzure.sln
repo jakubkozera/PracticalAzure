@@ -29,6 +29,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosDbCore", "CosmosDB\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosDbMongo", "CosmosDB\CosmosDbMongo\CosmosDbMongo.csproj", "{FCFE7C3C-B7A0-4691-B914-6D8D3CC5868C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Redis", "Redis", "{FEDFEFD9-F92B-49D8-ACAE-E27062C74DCA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisCache", "Redis\RedisCache\RedisCache.csproj", "{A54198ED-7FC7-483E-850C-2DE4085F4929}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,10 @@ Global
 		{FCFE7C3C-B7A0-4691-B914-6D8D3CC5868C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCFE7C3C-B7A0-4691-B914-6D8D3CC5868C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCFE7C3C-B7A0-4691-B914-6D8D3CC5868C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A54198ED-7FC7-483E-850C-2DE4085F4929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A54198ED-7FC7-483E-850C-2DE4085F4929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A54198ED-7FC7-483E-850C-2DE4085F4929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A54198ED-7FC7-483E-850C-2DE4085F4929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +86,7 @@ Global
 		{A2B84C5F-ECC3-4840-9C82-C35F5651D38B} = {BA76FC52-E63F-4489-A9ED-E561AE20B0A9}
 		{00D66AB0-0687-4A95-84B8-0D527C624832} = {A8B543BD-003A-400E-82FC-855D14150DCA}
 		{FCFE7C3C-B7A0-4691-B914-6D8D3CC5868C} = {A8B543BD-003A-400E-82FC-855D14150DCA}
+		{A54198ED-7FC7-483E-850C-2DE4085F4929} = {FEDFEFD9-F92B-49D8-ACAE-E27062C74DCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E44FA88-6951-4E3A-BDC3-C791D8B8A154}
