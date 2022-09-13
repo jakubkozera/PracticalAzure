@@ -37,6 +37,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{5F2599BC-6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcSample", "Apps\MvcSample\MvcSample.csproj", "{02B9D60B-7FE7-4002-AD59-E6712A09265B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureFunctions", "AzureFunctions", "{32736B32-9298-4DED-8A04-75101F5E1B68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobTriggerIsolated", "AzureFunctions\BlobTriggerIsolated\BlobTriggerIsolated.csproj", "{A54A3D75-FEB1-42E8-9F0C-58196FBB56AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{02B9D60B-7FE7-4002-AD59-E6712A09265B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02B9D60B-7FE7-4002-AD59-E6712A09265B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02B9D60B-7FE7-4002-AD59-E6712A09265B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A54A3D75-FEB1-42E8-9F0C-58196FBB56AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A54A3D75-FEB1-42E8-9F0C-58196FBB56AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A54A3D75-FEB1-42E8-9F0C-58196FBB56AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A54A3D75-FEB1-42E8-9F0C-58196FBB56AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +104,7 @@ Global
 		{FCFE7C3C-B7A0-4691-B914-6D8D3CC5868C} = {A8B543BD-003A-400E-82FC-855D14150DCA}
 		{A54198ED-7FC7-483E-850C-2DE4085F4929} = {FEDFEFD9-F92B-49D8-ACAE-E27062C74DCA}
 		{02B9D60B-7FE7-4002-AD59-E6712A09265B} = {5F2599BC-6130-4CA5-9F9F-66B9D71FF829}
+		{A54A3D75-FEB1-42E8-9F0C-58196FBB56AC} = {32736B32-9298-4DED-8A04-75101F5E1B68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E44FA88-6951-4E3A-BDC3-C791D8B8A154}
