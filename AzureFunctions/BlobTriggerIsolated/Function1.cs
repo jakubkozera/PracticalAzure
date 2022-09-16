@@ -15,7 +15,14 @@ namespace BlobTriggerIsolated
             _logger = loggerFactory.CreateLogger<Function1>();
         }
 
-        [Function("Function1")]
+        [Function("CronTriggerFunction")]
+        public void RunCronTrigger([TimerTrigger("*/2 * * * *")] TimerInfo timerInfo)
+        {
+            _logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+            _logger.LogInformation($"Next timer schedule at: {timerInfo.ScheduleStatus.Next}");
+        }
+
+        [Function("BlobTrigger")]
         [BlobOutput("results/{name}", Connection = "AzureWebJobsStorage")]
         public byte[] Run([BlobTrigger("samples-workitems/{name}", Connection = "AzureWebJobsStorage")] byte[] myBlob
             , string name)
