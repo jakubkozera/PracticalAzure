@@ -53,9 +53,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceBus", "ServiceBus", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusProducent", "ServiceBus\ServiceBusProducent\ServiceBusProducent.csproj", "{383C7886-23D9-430F-AFFD-998553348C76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusFunction", "ServiceBus\ServiceBusFunction\ServiceBusFunction.csproj", "{D62A4ACB-D876-4474-BF38-E6E3798BD3FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusFunction", "ServiceBus\ServiceBusFunction\ServiceBusFunction.csproj", "{D62A4ACB-D876-4474-BF38-E6E3798BD3FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusConsoleWorker", "ServiceBus\ServiceBusConsoleWorker\ServiceBusConsoleWorker.csproj", "{EAFBECE6-D642-420A-81E1-3EF5FF88ECE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusConsoleWorker", "ServiceBus\ServiceBusConsoleWorker\ServiceBusConsoleWorker.csproj", "{EAFBECE6-D642-420A-81E1-3EF5FF88ECE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{243B6B60-74F8-40FB-A00E-8BFB4B73E3A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendGridSample", "Utilities\SendGrid\SendGridSample.csproj", "{76F97ED1-3EBF-42D7-9FCC-2B01736F298D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +127,10 @@ Global
 		{EAFBECE6-D642-420A-81E1-3EF5FF88ECE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAFBECE6-D642-420A-81E1-3EF5FF88ECE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAFBECE6-D642-420A-81E1-3EF5FF88ECE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F97ED1-3EBF-42D7-9FCC-2B01736F298D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F97ED1-3EBF-42D7-9FCC-2B01736F298D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F97ED1-3EBF-42D7-9FCC-2B01736F298D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F97ED1-3EBF-42D7-9FCC-2B01736F298D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +154,7 @@ Global
 		{383C7886-23D9-430F-AFFD-998553348C76} = {4E667B27-55E0-409A-90C5-27AEE43A5FD2}
 		{D62A4ACB-D876-4474-BF38-E6E3798BD3FA} = {4E667B27-55E0-409A-90C5-27AEE43A5FD2}
 		{EAFBECE6-D642-420A-81E1-3EF5FF88ECE4} = {4E667B27-55E0-409A-90C5-27AEE43A5FD2}
+		{76F97ED1-3EBF-42D7-9FCC-2B01736F298D} = {243B6B60-74F8-40FB-A00E-8BFB4B73E3A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E44FA88-6951-4E3A-BDC3-C791D8B8A154}
