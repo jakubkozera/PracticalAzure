@@ -2,7 +2,7 @@
 
 Console.WriteLine("Service Bus Consumer");
 
-var connectionString = "Endpoint=sb://project1sbne.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=9MPCij7AP/uy2BPNCv613tnnJgRT3AbYGKwC7bVYHzc=";
+var connectionString = "Endpoint=sb://project1sbne.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=9MPCij7AP/usa2BPNCv613tnnJgRT3AbYGKwC7bVYHzc=";
 
 var client = new ServiceBusClient(connectionString);
 

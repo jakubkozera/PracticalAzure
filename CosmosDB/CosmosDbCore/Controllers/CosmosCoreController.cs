@@ -82,7 +82,7 @@ namespace CosmosDbCore.Controllers
         private async Task<Container> GetContainer()
         {
             var connectionString = "AccountEndpoint=https://localhost:8081/;AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
-            //var connectionString = "AccountEndpoint=https://sample1cdcorene.documents.azure.com:443/;AccountKey=7MRdwJMzaKJJ9bh7FKXUtRBHmZfUQL8Grw4LvMxIB6Z7fiusOE0cGKJqHTK4Gi18GdF7bkz9ymZfgzLdxODAVw==;";
+            //var connectionString = "AccountEndpoint=https://sample1cdcorene.documents.azure.com:443/;AccountKey=7MRdwJMzaKJJ9bx7FKXUtRBHmZfUQL8Grw4LvMxIB6Z7fiusOE0cGKJqHTK4Gi18GdF7bkz9ymZfgzLdxODAVw==;";
             CosmosClient cosmosClient = new CosmosClient(connectionString);
 
             Database database = await cosmosClient.CreateDatabaseIfNotExistsAsync("Employees");

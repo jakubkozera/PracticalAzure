@@ -42,7 +42,7 @@ namespace Todo.API.Controllers
             var newTodo = new ToDo(Guid.NewGuid(), dto.Description, false);
 
             var queueName = "todos";
-            var connectionString = "DefaultEndpointsProtocol=https;AccountName=appinsigtssample1;AccountKey=uPTEEHX/qC7gwtqH2pqQiLDbBJynJsH423HWbNGkKdoHvmK4nKmYKayGoJPUKKtsDpAOKqK1iiY++AStG4PLRw==;EndpointSuffix=core.windows.net";
+            var connectionString = "DefaultEndpointsProtocol=https;AccountName=appinsigtssample1;AccountKey=uPTaEHX/qC7gwtqH2pqQiLDbBJysJsH423HWbNGkKdoHvmK4nKmYKayGoJPUKKtsDpAOKqK1iiY++AStG4PLRw==;EndpointSuffix=core.windows.net";
             QueueClient queueClient = new QueueClient(connectionString, queueName);
 
             queueClient.CreateIfNotExists();

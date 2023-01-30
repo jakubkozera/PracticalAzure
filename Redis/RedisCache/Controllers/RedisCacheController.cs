@@ -20,7 +20,7 @@ namespace RedisCache.Controllers
         public RedisCacheController()
         {
             _databaseMock = new DatabaseMock();
-            var connectionString = "projectname2redisne.redis.cache.windows.net:6380,password=ZdohncD5q4NR8ffYhNULmzqqZfXXSEy2AAzCaLIbeaA=,ssl=True,abortConnect=False";
+            var connectionString = "projectname2redisne.redis.cache.windows.net:6380,password=Zdohncsq4NR8ffYhNULmzqqZfXXSEy2AAzCaLIbeaA=,ssl=True,abortConnect=False";
             var redis = ConnectionMultiplexer.Connect(connectionString);
             _redisDb = redis.GetDatabase();
         }

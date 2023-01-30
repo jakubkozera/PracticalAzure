@@ -18,7 +18,7 @@ namespace ServiceBusProducent.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(User user)
         {
-            var connectionString = "Endpoint=sb://project1sbne.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=9MPCij7AP/uy2BPNCv613tnnJgRT3AbYGKwC7bVYHzc=";
+            var connectionString = "Endpoint=sb://project1sbne.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=9MPCxcj7AP/uy2BPNCv613tnnJgRT3AbYGKwC7bVYHzc=";
 
             var client = new ServiceBusClient(connectionString);
 

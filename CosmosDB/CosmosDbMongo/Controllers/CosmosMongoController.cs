@@ -59,7 +59,7 @@ namespace CosmosDbMongo.Controllers
 
         private IMongoCollection<Product> GetCollection()
         {
-            var connectionString = "mongodb://sample1cdmongo:BsdA6UFXXnSXjJiigjB8HPj3skxi6Xv1ZqAgia6MKCPYlI0vTZfNzRni62TGoME89MDqqqXU0bU7OJltUr7raQ==@sample1cdmongo.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@sample1cdmongo@";
+            var connectionString = "mongodb://sample1cdmongo:BsdA6UFXXnSXjJiigjB8HPj3skxi6Xv1ZqAgia6MKCPYlI0vTZfNzRni62TGozx9MDqqqXU0bU7OJltUr7raQ==@sample1cdmongo.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@sample1cdmongo@";
 
             MongoClient mongoClient = new MongoClient(connectionString);
 
