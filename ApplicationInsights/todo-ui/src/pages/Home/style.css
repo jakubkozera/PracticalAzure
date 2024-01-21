@@ -58,3 +58,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.create-todo {
+  height: 30px;
+}
+.create-todo input,button {
+  height: 100%;
+}
